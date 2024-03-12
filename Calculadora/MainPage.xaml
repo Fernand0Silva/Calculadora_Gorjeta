@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+
+            <Entry
+                x:Name="ValueEntry"
+                Placeholder="entre com valor"
+                />
+
+
+
+            <Label  
+               Text="Tip:"/>
+            <Label
+                Text="o.oo" 
+                x:Name="LabelTipValue"/>
+            <Label
+               Text="total"/>
+            <Label
+                Text="o.oo" x:Name=" LabelTotalValue"/>
+            <Label
+                Text="Tip Porcentagem"/>
+            <Label
+                Text="0.00"  x:Name=" LabelPercentagemValue"
+                />
+
+            <Slider 
+                x:Name="SliderTipPercent"
+                Minimum="0"
+                Maximum="100"
+                
+                
+                />
+
+            <Button
+                x:Name="BtnQuinze"
+                 Text="15%" 
+                 Margin="-10"
+                 HorizontalOptions="Fill"
+                 Clicked="OnQuinzeClicked"
+                
+                />
+
+            <Button
+                 x:Name="BtnVinte"
+                 Text="20%" 
+                 Margin="-10"
+                 HorizontalOptions="Fill"
+                  Clicked="OnBtnVinteClicked"/>
+
+            <Button
+                 x:Name="BtnRoundDown"
+                 Text="Arredondar pra baixo" 
+                 Margin="-10"
+                 HorizontalOptions="Fill"
+                Clicked="OnBtnRoundDownClicked"/>
+
+            <Button
+                 x:Name="BtnRoundUp"
+                 Text="Arredondar pra cima" 
+                 Margin="-10"
+                 HorizontalOptions="Fill"
+                Clicked="OntnRoundUpClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

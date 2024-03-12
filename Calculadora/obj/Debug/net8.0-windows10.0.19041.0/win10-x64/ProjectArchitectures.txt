@@ -1,0 +1,1 @@
+D:\2DS_Luiz\PAM_I\TipoCalculate\Calculadora\Calculadora\Calculadora.csproj;x64
